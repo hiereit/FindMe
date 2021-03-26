@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ddwucom.mobile.finalproject">
+
+    <!--위치 조사 필요 퍼미션-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--카메라/전화 permission-->
+    <uses-permission android:name="android.permission.DIAL_PHONE"/>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ddwucom.mobile.finalproject.MapActivity">
+
+        </activity>
+        <activity android:name="ddwucom.mobile.finalproject.RegisterLostItem">
+
+        </activity>
+        <activity android:name="ddwucom.mobile.finalproject.SearchActivity">
+
+        </activity>
+        <activity android:name="ddwucom.mobile.finalproject.ItemInfoActivity">
+
+        </activity>
+
+        <!--Receiver-->
+        <receiver android:name=".RepeatReceiver" />
+
+        <!--Service-->
+        <service
+            android:name=".FetchAddressIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".FetchLatLngIntentService"
+            android:exported="false"/>
+
+        <!--Privider-->
+        <!--외부의 앱이 내 앱의 파일을 접근할 수 있도록 FileProvider 지정-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ddwucom.mobile.finalproject.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

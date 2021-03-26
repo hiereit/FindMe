@@ -1,0 +1,189 @@
+<resources>
+    <!--APP 정보 관련-->
+    <string name="app_name">20180969_FinalReport</string>
+
+    <!--api 정보 관련 -->
+<!--    <string name="api_search_url">http://apis.data.go.kr/1320000/LostGoodsInfoInqireService/getLostGoodsInfoAccToClAreaPd?</string>-->
+    <string name="api_search_url">http://apis.data.go.kr/1320000/LostGoodsInfoInqireService/getLostGoodsInfoAccTpNmCstdyPlace</string>
+<!--    ?ServiceKey=rNFUonjDfuoue0sdVrkCPzb%2B1RdheS8YZ1ALc31T3GfDjHvv%2Blid4bfngZ7rRSoydjMrvJIUwsCxVrxk90VVqQ%3D%3D&LST_PLACE=%EC%97%AD&numOfRows=4  serviceKey= -->
+
+    <string name="api_info_url">http://apis.data.go.kr/1320000/LostGoodsInfoInqireService/getLostGoodsDetailInfo</string>
+    <string name="api_key">rNFUonjDfuoue0sdVrkCPzb%2B1RdheS8YZ1ALc31T3GfDjHvv%2Blid4bfngZ7rRSoydjMrvJIUwsCxVrxk90VVqQ%3D%3D</string>
+
+    <string name="google_api_key">AIzaSyA-e1XRyR9-IJLc8GEvmAR41CFKFzbuxKw</string>
+
+    <string name="init_lat">37.604094</string>
+    <string name="init_lng">127.042463</string>
+
+    <string name="service_not_available">서비스를 사용할 수 없습니다.</string>
+    <string name="invalid_lat_long_used">잘못된 위도/경도 입니다.</string>
+    <string name="no_address_found">주소를 찾을 수 없습니다.</string>
+    <string name="address_found">주소를 찾았습니다.</string>
+    <string name="no_geocoder_available">사용가능한 Geocoder가 없습니다.</string>
+
+    <string name="channel_name">Search Channel</string>
+    <string name="channel_description">Channel for search</string>
+    <string name="CHANNEL_ID">MY_CHANNEL</string>
+
+    <!--String-array _ Spinner배열 선언-->
+    <string-array name = "spinner_mainCat">
+        <item>전체</item>
+        <item>가방</item>
+        <item>귀금속</item>
+        <item>도서용품</item>
+        <item>서류</item>
+        <item>산업용품</item>
+        <item>쇼핑백</item>
+        <item>스포츠용품</item>
+        <item>악기</item>
+        <item>유가증권</item>
+        <item>의류</item>
+        <item>자동차</item>
+        <item>전자기기</item>
+        <item>지갑</item>
+        <item>증명서</item>
+        <item>컴퓨터</item>
+        <item>카드</item>
+        <item>현금</item>
+        <item>휴대폰</item>
+        <item>기타물품</item>
+    </string-array>
+
+    <string-array name = "spinner_mCat_bag">
+        <item>전체</item>
+        <item>여성용가방</item>
+        <item>남성용가방</item>
+        <item>기타가방</item>
+    </string-array>
+    <string-array name = "spinner_mCat_acc">
+        <item>전체</item>
+        <item>반지</item>
+        <item>목걸이</item>
+        <item>귀걸이</item>
+        <item>시계</item>
+        <item>선글라스</item>
+        <item>안경</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name = "spinner_mCat_book">
+        <item>전체</item>
+        <item>학습서적</item>
+        <item>소설</item>
+        <item>컴퓨터서적</item>
+        <item>만화책</item>
+        <item>기타서적</item>
+    </string-array>
+    <string-array name = "spinner_mCat_doc">
+        <item>전체</item>
+        <item>서류</item>
+        <item>기타물품</item>
+    </string-array>
+    <string-array name = "spinner_mCat_indust">
+        <item>전체</item>
+        <item>기타물품</item>
+    </string-array>
+    <string-array name = "spinner_mCat_shoppingbag">
+        <item>전체</item>
+        <item>쇼핑백</item>
+    </string-array>
+    <string-array name = "spinner_mCat_sports">
+        <item>전체</item>
+        <item>수영복</item>
+        <item>수영물품</item>
+        <item>기타용품</item>
+    </string-array>
+    <string-array name = "spinner_mCat_musical">
+        <item>전체</item>
+        <item>건반악기</item>
+        <item>관악기</item>
+        <item>타악기</item>
+        <item>현악기</item>
+        <item>기타악기</item>
+    </string-array>
+    <string-array name = "spinner_mCat_finance">
+        <item>전체</item>
+        <item>어음</item>
+        <item>상품권</item>
+        <item>채권</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name = "spinner_mCat_cloth">
+        <item>전체</item>
+        <item>여성의류</item>
+        <item>남성의류</item>
+        <item>아기의류</item>
+        <item>모자</item>
+        <item>신발</item>
+        <item>기타의류</item>
+    </string-array>
+    <string-array name = "spinner_mCat_car">
+        <item>전체</item>
+        <item>자동차열쇠</item>
+        <item>네비게이션</item>
+        <item>자동차번호판</item>
+        <item>임시번호판</item>
+        <item>기타용품</item>
+    </string-array>
+    <string-array name = "spinner_mCat_electronic">
+        <item>전체</item>
+        <item>PMP</item>
+        <item>MP3</item>
+        <item>PDA</item>
+        <item>카메라</item>
+        <item>태블릿PC</item>
+        <item>전자수첩</item>
+        <item>기타용품</item>
+    </string-array>
+    <string-array name = "spinner_mCat_wallet">
+        <item>전체</item>
+        <item>여성용 지갑</item>
+        <item>남성용 지갑</item>
+        <item>기타 지갑</item>
+    </string-array>
+    <string-array name = "spinner_mCat_certifi">
+        <item>전체</item>
+        <item>신분증</item>
+        <item>면허증</item>
+        <item>여권</item>
+        <item>판결문</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name = "spinner_mCat_com">
+        <item>전체</item>
+        <item>삼성노트북</item>
+        <item>LG노트북</item>
+        <item>Mac북</item>
+        <item>삼보노트북</item>
+        <item>HP노트북</item>
+        <item>ASUS노트북</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name = "spinner_mCat_card">
+        <item>전체</item>
+        <item>신용(체크)카드</item>
+        <item>일반카드</item>
+        <item>기타카드</item>
+    </string-array>
+    <string-array name = "spinner_mCat_cash">
+        <item>전체</item>
+        <item>현금</item>
+        <item>수표</item>
+        <item>외화</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name = "spinner_mCat_phone">
+        <item>전체</item>
+        <item>아이폰</item>
+        <item>삼성휴대폰</item>
+        <item>LG휴대폰</item>
+        <item>스카이휴대폰</item>
+        <item>oppo휴대폰</item>
+        <item>화웨이휴대폰</item>
+        <item>모토로라휴대폰</item>
+        <item>기타통신기기</item>
+    </string-array>
+    <string-array name = "spinner_mCat_etc">
+        <item>전체</item>
+        <item>기타</item>
+    </string-array>
+</resources>
