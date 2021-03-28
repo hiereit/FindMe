@@ -8,7 +8,7 @@
 ### Introduction 
 + **분실물 검색**
   * 경찰청 데이터에 등록된 분실물 정보 조회 서비스 제공 (간단세부사항조회)
-+ **분실물 등록 ⦁ 관리**
++ **분실물 등록 및 관리**
   * 자신의 분실물 정보를 앱에 저장하여 관리
 + **분실장소 검색**
   * 지도를 이용해 자신의 위치 근처나, 자신이 입력한 위치 근처의 place 정보를 제공    
@@ -28,4 +28,4 @@
 + 경찰청 / [분실물정보 조회 서비스](https://www.data.go.kr/data/15000799/openapi.do, "apiLost") :police_car:
 
 ### Developer's Git :octocat:  
-:octocat: [GitHub](https://github.com/hiereit,"mygh") @hiereit
++ [GitHub](https://github.com/hiereit,"mygh") @hiereit
